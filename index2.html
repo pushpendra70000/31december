@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>traversing</title>
+    </head>
+    <body>
+        <style>
+        </style>
+        <table border=1px class="mytable">
+            <thead>
+                <tr>
+                    <td>name</td>
+                    <td>contact</td>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>pushpendra</td>
+                    <td>7000091139</td>
+                    
+                </tr>
+                <tr>
+                    <td>pankaj</td>
+                    <td>708287285</td>
+                </tr>
+                <tr>
+                    <td>arun</td>
+                    <td>9039251814</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <button onclick="create()">CREATE</button>
+        <button onclick="del(this)">DELETE</button>
+        <br></br>
+        <button type="submit">submit</button>
+        <script>
+
+                //document.querySelector('.mytable tbody tr:last-child td:first-child').innerText ="me"
+                
+                function create(){
+                    let table = document.querySelector('.mytable')
+                    var row = table.insertRow(4)
+                    var cell1 = row.insertCell(0)
+                    var cell2 = row.insertCell(1)
+
+                    cell1.innerText= "new1"
+                    cell2.innerText = "new2"
+                }
+                let tab = document.querySelector('.mytable tbody tr:last-child td:last-child');
+                console.log(tab)
+                function del(){
+                }
+        
+    
+
+        </script>
+    </body>
+</html>

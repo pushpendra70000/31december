@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>traversing</title>
+    </head>
+    <body>
+        <style>
+            #grandparent{
+                border: 5px dashed black;
+                color: red;
+            }
+            #parents{
+                border: 5px solid black;
+                color: green;
+            }
+            .child1{
+                color: blue;
+                border: 5px solid red;
+            }
+            .child2{
+                color: brown;
+                border: 4px dashed coral;
+            }
+
+        </style>
+        <div id="grandparent">
+            prabhulalji
+            <div id="parents">
+                chandrashekhar ji
+                <div class="child1">pushpendra</div>
+                <div class="child2">anita</div>
+            </div>
+        </div>
+        <script>
+            document.querySelector(".child1").innerText = "hello1" 
+            document.querySelector(".child2").style.border = "8px solid blue"
+            //let par = document.querySelector("#parents")  
+            //par.innerText = "hello3"   
+        </script>
+    </body>
+</html>
